@@ -23,6 +23,7 @@ exports.getByid = (req, res) =>{
 exports.create = (req, res)=>{
 
     const body = req.body
+    
     clienteModel.save(body,(err,result)=>{
         if(err){
             return res.status(500).json({error:err})

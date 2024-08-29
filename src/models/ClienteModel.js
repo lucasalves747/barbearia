@@ -3,7 +3,7 @@ const connection = require("../config/database")
 const findAll = (callback)=>{
 
     const sql = 'select * from CLIENTES'
-    connection.query(sql,{},(err,result)=>{
+    connection.query(sql,(err,result)=>{
         if(err){
             return callback(err,null)
         }
@@ -24,6 +24,7 @@ const finddById = (id,callback)=>{
 const save = (body,callback)=>{
 
     const sql = "insert into clientes set ?"
+    
     connection.query(sql,body,(err,result)=>{
         if(err){
             return callback(err,null)

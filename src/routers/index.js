@@ -11,4 +11,5 @@ module.exports = (app) => {
     app.use("/disponibilidade", disponibilidadeRouter)
     app.use("/proficionais", proficionalRouter)
     app.use("/agendamento", agendamentoRouter)
+   
 }

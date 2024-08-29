@@ -1,0 +1,1 @@
+const barbeariaModel = require('../models/BarbeariaModel')
